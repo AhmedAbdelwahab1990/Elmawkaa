@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>form</title>
+	<!-- Mobile Specific Metas -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!-- Font-->
+	<link rel="stylesheet" type="text/css" href="css/raleway-font.css">
+	<link rel="stylesheet" type="text/css" href="fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
+	<!-- Jquery -->
+	<link rel="stylesheet" href="https://jqueryvalidation.org/files/demo/site-demos.css">
+	<!-- Main Style Css -->
+	<link rel="stylesheet" href="css/styleform.css"/>
+</head>
+<body>
+	<div>
+		<ul>
+			<!-- Make an image logo as link to home --> 
+			<a href="#HOME" title="home"><img src="https://elmawkaa.com/img/logo.png" alt="" style="width:200px;">
+			</a>
+			<!-- Make a sticky list with links to sections--> 
+			<li><a href="https://www.handaz.com/Account/login">English</a></li>
+			<li><a href="#contact">اتصل بنا</a></li>
+			<li><a href="#download">حمل التطبيق</a></li>
+			<li><a href="#SERVICES">الباقات</a></li>
+			<li><a href="https://elmawkaa.com/Blog">المدونة</a></li>
+			<li><a href="#HOME">سجل معنا كمورد</a></li>
+			<li><a href="#HOME">كيف يعمل</a></li>
+			<li><a href="#HOME">أحدث الطلبيات</a></li>
+			<li><a href="#HOME">مواد بناء</a></li>
+			<li><a href="#HOME">الرئيسية</a></li>
+		</ul>
+	</div>
+	<!-- Here we will Make a multistep-form with validation attr--> 
+	<div class="page-content" style="background-image: url('images/wizard-v1.jpg')">
+		<div class="wizard-v1-content">
+			<div class="wizard-form">
+				<form class="form-register" id="form-register" action="#" method="post">
+					<div id="form-total">
+						<!-- SECTION 1 -->
+						<h2>
+							<span class="step-icon"><i class="zmdi zmdi-account"></i></span>
+							<span class="step-text">معلومات المنتج</span>
+						</h2>
+						<section dir="rtl" style="text-align: right;">
+							<div class="inner">
+								<div class="form-row">
+									<div class="form-holder form-holder-2">
+										<label for="quantity">الكمية بالعدد *</label>
+										<input type="number" placeholder="0" class="form-control" id="quantity" name="quantity" required>
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-holder form-holder-2">
+										<label for="manifactruer">انتاج مصنع ايه؟ سيبها فاضية لو مش فارق معاك المصنع</label>
+										<input type="text" placeholder="" class="form-control" id="manifactruer" name="manifactruer">
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-holder form-holder-2">
+										<label for="card-type">نوع الطوب *</label>
+										<select name="card-type" id="card-type" class="form-control">
+											<option value="" disabled selected></option>
+											<option value="اسمنتي مصمت">اسمنتي مصمت</option>
+											<option value="اسمنتي مفرغ">اسمنتي مفرغ</option>
+											<option value="طفلي أحمر مصمت">طفلي أحمر مصمت</option>
+											<option value="طفلي أحمر مصمت">طفلي أحمر مفرغ</option>
+											<option value="طفلي أحمر مفرغ">طفلي أحمر مفرغ</option>
+										</select>
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-holder form-holder-2">
+										<label for="bricksize">مقاس الطوبة... مثال: 25 × 12 × 6 *</label>
+										<input type="text" placeholder="" class="form-control" id="username" name="username" required>
+									</div>
+								</div>
+							</div>
+						</section>
+						<!-- SECTION 2 -->
+						<h2>
+							<span class="step-icon"><i class="zmdi zmdi-card"></i></span>
+							<span class="step-text">المشروع</span>
+						</h2>
+						<section dir="rtl" style="text-align: right;">
+							<div class="inner">
+								<div class="form-row">
+									<div class="form-holder form-holder-2">
+										<label for="location">مكان المشروع *</label>
+										<input type="text" اختر مكان المشروع="" class="form-control" id="location" name="location" required>
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-holder form-holder-2">
+										<label for="adress"> عنوان المشروع</label>
+										<input type="text" name="adress" class="form-control" id="adress" placeholder="">
+									</div>
+								</div>
+								<div class="form-row form-row-2">
+									<div class="form-holder">
+										<label for="stage">مرحلة المشروع *</label>
+										<select name="stage" id="stage" class="form-control">
+											<option value="" disabled selected></option>
+											<option value="January">مرحلة التنفيذ</option>
+											<option value="February">مرحلة تقديم المناقصات</option>
+										</select>
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-holder form-holder-2">
+										<label for="date">عايز تنفذ الطلبية امتى؟:</label>									
+										<input type="date" id="date" name="order-date"
+										value="2021-03-13"
+										min="2021-01-01" max="2022-12-31">
+									</div>
+								</div>
+							</div>
+						</section>
+						<!-- SECTION 3 -->
+						<h2>
+							<span class="step-icon"><i class="zmdi zmdi-receipt"></i></span>
+							<span class="step-text">تفاصيل أخرى</span>
+						</h2>
+						<section dir="rtl" style="text-align: right;">
+							<div class="inner">
+								<div class="form-row form-row-2">
+									<div class="form-holder">
+										<label for="stage">طريقة الدفع ؟ *</label>
+										<select name="stage" id="stage" class="form-control">
+											<option value="" disabled selected></option>
+											<option value="January">كاش أو تحويل بنكي</option>
+											<option value="February">آجل</option>
+										</select>
+									</div>
+									<p>الدفع بالآجل متاح فقط للمقاولين الذين نفذوا أكثر من عمليتين وحسب شروط وموافقة المورد </p>
+								</div>
+								<div class="form-row">
+									<div class="form-holder form-holder-2">
+										<h2>تفاصيل أخرى خاصة بالطلب</h2>
+										<p>مثال: المواصفات والمقاسات والاعتمادات المطلوبة ومحتاج السعر شامل ايه.</p>
+										<form action="/action_page.php">
+											<textarea name="message" rows="10" cols="60"></textarea>
+										</form>
+									</div>
+								</div>
+							</div>
+						</section>
+						<!-- SECTION 4 -->
+						<h2>
+							<span class="step-icon"><i class="zmdi zmdi-account"></i></span>
+							<span class="step-text">ازاي نوصلك</span>
+						</h2>
+						<section dir="rtl" style="text-align: right;">
+							<div class="inner">
+								<div class="form-row">
+									<div class="form-holder form-holder-2">
+										<label for="quantity"> اسم شركتك ايه؟ اكتب اسمك الثنائي لو مفيش شركة *</label>
+										<input type="number" placeholder="0" class="form-control" id="quantity" name="quantity" required>
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-holder form-holder-2">
+										<label for="manifactruer">اسمك ايه؟ *</label>
+										<input type="text" placeholder="" class="form-control" id="manifactruer" name="manifactruer" required>
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-holder form-holder-2">
+										<label for="manifactruer">رقم تليفونك... يفضل يكون به واتساب *</label>
+										<input type="text" placeholder="" class="form-control" id="manifactruer" name="manifactruer" required pattern="(201)[0-9]{9}" oninvalid="this.setCustomValidity('ادخل رقم تليفون صحيح')"
+										oninput="this.setCustomValidity('')"/>
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-holder form-holder-2">
+										<label for="email">ايميلك</label>
+										<input type="email" placeholder="" class="form-control" id="email" name="email" required pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}">
+									</div>
+								</div>
+							</div>
+						</section>	
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- last section, footer information.-->
+	<div>
+		<footer class="footer">
+			<div style="width: 40%; float:left;">
+				<br>
+				<p>حقوق النشر 2021 - شركة الموقع ش. ذ. م. م. | جميع الحقوق محفوظة.</p>
+			</div>
+			<div style="width: 40%; float:right;" class="footer-contact">
+				<ul>
+					<li><a href="https://www.facebook.com/ElMawkaa/" class="fa fa-facebook" style='font-size:25px'></a>
+					</li>
+					<li><a href="https://twitter.com/Elmawkaa1" class="fa fa-twitter" style='font-size:25px'></a>
+					</li>
+				</ul>
+			</div>
+		</footer>
+	</div>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+	<script src="js/jquery.steps.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
